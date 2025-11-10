@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cs.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Encontre um Profissional</div> 
+  </header>
+  <div class="container">
+    <div class="card">
+      <img src="Ana Beatriz.webp">
+      <div class="card-content">
+      <h1>Ana Beatriz Silva</h1>
+      <br>
+      <hr>
+      <h2>idade: 27 anos</h2>
+      <br>
+      <hr>
+      <br>
+      <h2>Pontos Fortes:</h2>
+      <p>Formação: Bacharel em Ciência da Computação
+
+Especialidade: Desenvolvimento Front-End (HTML, CSS, JavaScript, React)
+
+Pontos fortes: Boa comunicação, trabalho em equipe e experiência com UX/UI
+
+Tipo de vaga ideal: Desenvolvedora Web, Analista de Sistemas ou Estagiária de TI</p>
+      <h2></h2>
+      <p></p>
+      </div>
+      <button class="ver-mais" onclick="toggleCard('card1', this)">Ver mais</button>
+    </div>
+    <div class="card">
+      <img src="Jão Blabla.webp">
+      <div class="card-content">
+      <h1>João Henrique Santos</h1>
+      <br>
+      <hr>
+      <h2>idade: 35 anos</h2>
+      <br>
+      <hr>
+      <br>
+      <h2></h2>
+      <p>Idade: 35 anos
+
+Formação: Técnico em Eletromecânica
+
+Especialidade: Manutenção industrial e automação de máquinas
+
+Pontos fortes: Organização, conhecimento em CLP, NR-10 e leitura de diagramas elétricos
+
+Tipo de vaga ideal: Técnico de Manutenção, Eletromecânico, Operador de Utilidades</p>
+      </div>
+      <button class="ver-mais" onclick="toggleCard('card1', this)">Ver mais</button>
+    </div>
+    <div class="card">
+      <img src="Carla Menezes.webp">
+      <div class="card-content">
+     <h1>Carla Menezes</h1>
+      <br>
+      <hr>
+      <h2>idade: 42 anos</h2>
+      <br>
+      <hr>
+      <br>
+      <h2>Formação</h2>
+     <p>Formação: Licenciatura em Letras (Português e Inglês)
+
+Especialidade: Ensino de idiomas e revisão de textos
+
+Pontos fortes: Didática, paciência, experiência com alunos de diferentes idades
+
+Tipo de vaga ideal: Professora de Português/Inglês, Revisora de Textos, Tutora Online</p>
+     <h2>Pontos forte</h2>
+     <h2>Especialidade</h2>
+     </div>
+     <button class="ver-mais" onclick="toggleCard('card1', this)">Ver mais</button>
+    </div>
+  
+    <div class="card">
+      <img src="Blabla sla.webp">
+      <div class="card-content">
+    <h1>Rafael Costa</h1>
+      <br>
+      <hr>
+      <h2>idade: 30 anos</h2>
+      <br>
+      <hr>
+      <br>
+      <h2></h2>
+    <p>Formação: Curso Técnico em Gastronomia
+
+Especialidade: Culinária brasileira e internacional, gestão de cozinha
+
+Pontos fortes: Criatividade, liderança de equipe, controle de estoque e custos
+
+Tipo de vaga ideal: Chef de Cozinha, Cozinheiro Chefe, Consultor Gastronômico</p>
+     </div>
+     <button class="ver-mais" onclick="toggleCard('card1', this)">Ver mais</button>
+    </div>
+  </div>
+    <script>
+function toggleTexto(botao) {
+  const texto = botao.previousElementSibling;
+  texto.classList.toggle('expandido');
+  botao.textContent = texto.classList.contains('expandido') ? 'Mostrar menos' : 'Mostrar mais';
+}
+</script>
+</body>
+</html>
