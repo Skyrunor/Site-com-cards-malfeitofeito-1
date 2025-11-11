@@ -1,0 +1,10 @@
+class Animal:
+    def __init__(self, nome_animal, idade_animal):
+        self.nome = nome.animal
+        self.idade = idade.animal
+    
+    def info(self):
+        print(f'Nome:{self.nome}\nIdade:{self.idade} ano(s)')
+    
+    def dormir(self):
+        print('Animal que gosta muito de dormir')
